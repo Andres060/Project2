@@ -1,24 +1,6 @@
 from Usuario import Usuario
 
 class Cliente(Usuario):
-    def __init__(self):
-        pass
-
-    def buscarVuelo(self, vuelo):
-        pass
-
-    def reservarVuelo(self, codigo, preferencial):
-        pass
-
-    def gestionarReserva(self):
-        pass
-
-    def realizarCheckIn(self, reserva):
-        pass
-
-    def acumularMillas(self):
-        pass
-
-    def toString(self):
-        pass
-    
+    def __init__(self,nombre, correo, id, contrasena, millas=0):
+        super().__init__(nombre, correo, id, contrasena)
+        self.__millas = millas
